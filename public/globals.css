@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  #__next {
+    @apply contents;
+  }
+
+  html {
+    @apply h-full scroll-smooth antialiased font-poppins;
+  }
+
+  body {
+    @apply flex h-full flex-col text-neutral-600;
+  }
+
+  main {
+    @apply grow;
+  }
+
+  .section {
+    @apply py-6 px-6 pb-56 flex flex-col;
+  }
+
+  .container {
+    @apply pt-2 sm:pt-4 md:pt-6 lg:pt-8 w-full flex justify-center;
+  }
+
+  .title {
+    @apply text-primary;
+  }
+}
+
+:root {
+  --ant-font-family: 'Poppins', sans-serif;
+}
+
+.custom-card-title .ant-card-head-title {
+  white-space: normal;
+}
+
+:where(.css-dev-only-do-not-override-14i19y2).ant-upload-wrapper .ant-upload-select {
+  display: block !important;
+  width: 100% !important;
+}
+
+.whats-list-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.whats-list-scrollbar::-webkit-scrollbar-track {
+  background: #2d3748;
+  border-radius: 4px;
+}
+
+.whats-list-scrollbar::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+.whats-list-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
